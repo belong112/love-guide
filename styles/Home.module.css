@@ -1,5 +1,29 @@
 .main {
   min-height: 100vh;
+  background-color: #a4c0cf;
+}
+
+.fog {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 0;
+  animation: moveImage 30s linear infinite;
+  left: 1000px;
+  opacity: 0.5;
+  width: 3000px;
+}
+
+@keyframes moveImage {
+  0% {
+    left: -1000px;
+  }
+  50% {
+    left: 60%;
+  }
+  100% {
+    left: -500px;
+  }
 }
 
 .picBox {

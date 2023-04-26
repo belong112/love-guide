@@ -6,7 +6,7 @@ import ChoicesBox from "@/components/ChoiceBox";
 import { Container, Grid, Divider } from "@mui/material";
 import { nanoid } from "nanoid";
 
-interface SectionProps {
+interface MultiOpSectionProps {
   question: string[];
   options: string[];
   clickNextPhase: any;
@@ -15,11 +15,11 @@ interface SectionProps {
   sm: number;
   xs: number;
 }
-export default function Section(props: SectionProps) {
+export default function MultiOpSection(props: MultiOpSectionProps) {
   const traits = props.options;
   const [options, setOptions] = useState(allNewOptions());
   const [choices, setChoices] = useState(allNewChoices());
-  const questionSection = props.question.join("\n");
+  const questionDescription = props.question.join("\n");
 
   const optionBtns = options.map((op) => (
     <Grid key={nanoid()} item md={props.md} sm={props.sm} xs={props.xs}>
@@ -147,7 +147,7 @@ export default function Section(props: SectionProps) {
       <Container maxWidth="sm">
         <Grid container pt={5} justifyContent="center">
           <Grid item md={8} className={styles.questionText}>
-            {questionSection}
+            {questionDescription}
           </Grid>
           <Grid container spacing={2} my={1}>
             {choiceBoxs}

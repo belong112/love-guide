@@ -2,6 +2,7 @@
   "questionList": [
     {
       "qid": 1,
+      "questionType": "MultiOp",
       "question": [
         "你躺在舒服的床舖上",
         "想著你的戀人/你暗戀的他入睡夢裡面",
@@ -29,6 +30,7 @@
     },
     {
       "qid": 2,
+      "questionType": "MultiOp",
       "question": [
         "看了很多卡通和電視劇裡面的戀愛",
         "也聽了身邊好多人的戀愛故事",
@@ -58,21 +60,8 @@
       "xs": 6
     },
     {
-      "qid": 0,
-      "question": [
-        "表述的心意得到了正面的回應",
-        "你們正式進入情侶關係，當對方做出哪些行為",
-        "會讓你感受到他/她對你的喜歡？",
-        "（請仔細閱讀與感受這兩個選項，並從其中選出較能反映你真實想法的句子。)"
-      ],
-      "options": [],
-      "selectNumbers": 0,
-      "md": 12,
-      "sm": 12,
-      "xs": 12
-    },
-    {
       "qid": 3,
+      "questionType": "SingleOp",
       "question": ["以下哪一種相處的方式，最接近你所認為的戀愛？"],
       "options": [
         "互相陪伴，和心愛的人在一起一輩子，一起慢慢變老",
@@ -87,6 +76,7 @@
     },
     {
       "qid": 4,
+      "questionType": "SingleOp",
       "question": [
         "在某一次的下課時間",
         "你發現自己的目光總是會不自覺的落在同一個人身上",
@@ -107,11 +97,161 @@
     },
     {
       "qid": 5,
-      "question": ["在告白之後，面對對方的回應，你會抱持著怎樣的期待呢？"],
+      "questionType": "SingleOp",
+      "question": ["在告白之後，面對對方的回應", "你會抱持著怎樣的期待呢？"],
       "options": [
         "希望他當下就給予回應，避免讓自己感到煎熬",
         "沒得到回應也沒關係，重點是有清楚表述自己的感受",
         "如果對方沒有喜歡自己，會感到相當憤怒與失望"
+      ],
+      "selectNumbers": 1,
+      "md": 12,
+      "sm": 12,
+      "xs": 12
+    },
+    {
+      "qid": 0,
+      "questionType": "Description",
+      "question": [
+        "表述的心意得到了正面的回應",
+        "你們正式進入情侶關係，當對方做出哪些行為",
+        "會讓你感受到他/她對你的喜歡？",
+        "（請仔細閱讀與感受這兩個選項，並從其中選出較能反映你真實想法的句子。)"
+      ],
+      "options": [],
+      "selectNumbers": 0,
+      "md": 12,
+      "sm": 12,
+      "xs": 12
+    },
+    {
+      "qid": 6,
+      "questionType": "TrueAndFalse",
+      "question": [""],
+      "options": ["我喜歡收到寫滿讚美與肯定的小紙條", "我喜歡被擁抱的感覺"],
+      "selectNumbers": 1,
+      "md": 6,
+      "sm": 6,
+      "xs": 6
+    },
+    {
+      "qid": 7,
+      "questionType": "TrueAndFalse",
+      "question": [""],
+      "options": [
+        "我喜歡和對方獨處，就算各做各的事也沒關係",
+        "每當有人給我實際的幫助，我就會覺得他是愛我的"
+      ],
+      "selectNumbers": 1,
+      "md": 6,
+      "sm": 6,
+      "xs": 6
+    },
+    {
+      "qid": 8,
+      "questionType": "TrueAndFalse",
+      "question": [""],
+      "options": ["我喜歡收到禮物", "我喜歡到對方家裡玩"],
+      "selectNumbers": 1,
+      "md": 6,
+      "sm": 6,
+      "xs": 6
+    },
+    {
+      "qid": 9,
+      "questionType": "TrueAndFalse",
+      "question": [""],
+      "options": [
+        "當我遇到挫折時，有人能夠給予我實質的幫助，會讓我感到被喜歡",
+        "當我遇到挫折時，對方若能給予我擁抱，會讓我感覺到被喜歡"
+      ],
+      "selectNumbers": 1,
+      "md": 6,
+      "sm": 6,
+      "xs": 6
+    },
+    {
+      "qid": 10,
+      "questionType": "TrueAndFalse",
+      "question": [""],
+      "options": [
+        "當對方攬著我的肩膀，我就會有被喜歡的感覺",
+        "當對方送我禮物，我就會有被喜歡的感覺"
+      ],
+      "selectNumbers": 1,
+      "md": 6,
+      "sm": 6,
+      "xs": 6
+    },
+    {
+      "qid": 11,
+      "questionType": "TrueAndFalse",
+      "question": [""],
+      "options": ["我喜歡和對方到處走走", "我喜歡和對方擊掌或手牽手"],
+      "selectNumbers": 1,
+      "md": 6,
+      "sm": 6,
+      "xs": 6
+    },
+    {
+      "qid": 12,
+      "questionType": "TrueAndFalse",
+      "question": [""],
+      "options": [
+        "收到禮物會讓我覺得很開心",
+        "當對方給予我肯定或讚美時會讓我有被喜歡的感覺"
+      ],
+      "selectNumbers": 1,
+      "md": 6,
+      "sm": 6,
+      "xs": 6
+    },
+    {
+      "qid": 13,
+      "questionType": "TrueAndFalse",
+      "question": [""],
+      "options": [
+        "當別人為我努力做一件事，我會覺得他很喜歡我",
+        "我喜歡聽到別人說我很好看，很迷人"
+      ],
+      "selectNumbers": 1,
+      "md": 6,
+      "sm": 6,
+      "xs": 6
+    },
+    {
+      "qid": 14,
+      "questionType": "TrueAndFalse",
+      "question": [""],
+      "options": ["我喜歡和對方一起玩耍", "我喜歡收到對方送給我的禮物"],
+      "selectNumbers": 1,
+      "md": 6,
+      "sm": 6,
+      "xs": 6
+    },
+    {
+      "qid": 15,
+      "questionType": "TrueAndFalse",
+      "question": [""],
+      "options": [
+        "我喜歡聽到別人肯定我的話",
+        "如果有人幫我的忙，我會覺得他是喜歡我的"
+      ],
+      "selectNumbers": 1,
+      "md": 6,
+      "sm": 6,
+      "xs": 6
+    },
+    {
+      "qid": 16,
+      "questionType": "SingleOp",
+      "question": [
+        "隨著摩擦越來越多，發現彼此在個性、價值觀上好像都不是很適合，想結束這段關係的你，會選擇採取怎樣的行動呢？"
+      ],
+      "options": [
+        "降低相處的頻率，慢慢拉開彼此的距離，讓雙方的感情冷卻",
+        "不知道該如何開口，怕傷害對方，因此先採取較為的態度",
+        "向對方直接提出自己的想法，並講述認為不適合的原因"
       ],
       "selectNumbers": 1,
       "md": 12,

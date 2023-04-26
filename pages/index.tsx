@@ -1,13 +1,15 @@
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import Section from "@/components/Section";
+import MultiOpSection from "@/components/MultiOpSection";
 import SingleOpSection from "@/components/SingleOpSection";
 import loadingGif from "@/asset/cute.gif";
 import questionData from "@/src/question-list.json";
 
 export default function Home() {
+  const router = useRouter();
   const [phase, setPhase] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   setTimeout(() => {
@@ -22,8 +24,12 @@ export default function Home() {
   const questionList = questionData.questionList;
 
   function nextPhase() {
-    setPhase(phase + 1);
-    setIsLoading(true);
+    if (phase !== 16) {
+      setPhase(phase + 1);
+      setIsLoading(true);
+    } else {
+      router.push("/result");
+    }
   }
 
   return (
@@ -44,11 +50,17 @@ export default function Home() {
           </div>
         ) : (
           <div>
-            <Section clickNextPhase={nextPhase} {...questionList[phase]} />
-            <SingleOpSection
-              clickNextPhase={nextPhase}
-              {...questionList[phase]}
-            />
+            {questionList[phase].questionType === "MultiOp" ? (
+              <MultiOpSection
+                clickNextPhase={nextPhase}
+                {...questionList[phase]}
+              />
+            ) : (
+              <SingleOpSection
+                clickNextPhase={nextPhase}
+                {...questionList[phase]}
+              />
+            )}
           </div>
         )}
       </main>
