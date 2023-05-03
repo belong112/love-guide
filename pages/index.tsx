@@ -12,6 +12,7 @@ export default function Home() {
   const router = useRouter();
   const [phase, setPhase] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+
   setTimeout(() => {
     setIsLoading(false);
   }, 500);
@@ -23,12 +24,14 @@ export default function Home() {
 
   const questionList = questionData.questionList;
 
-  function nextPhase() {
+  function handleClick() {
+    // cause we got 16 questions
     if (phase !== 16) {
+      // 第三題
       setPhase(phase + 1);
       setIsLoading(true);
     } else {
-      router.push("/result");
+      router.push("/results/0-0-2");
     }
   }
 
@@ -52,12 +55,12 @@ export default function Home() {
           <div>
             {questionList[phase].questionType === "MultiOp" ? (
               <MultiOpSection
-                clickNextPhase={nextPhase}
+                clickNextPhase={handleClick}
                 {...questionList[phase]}
               />
             ) : (
               <SingleOpSection
-                clickNextPhase={nextPhase}
+                clickNextPhase={handleClick}
                 {...questionList[phase]}
               />
             )}
