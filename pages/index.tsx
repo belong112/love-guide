@@ -10,6 +10,8 @@ import questionData from "@/src/question-list.json";
 
 export default function Home() {
   const router = useRouter();
+  const [loveType, setLoveType] = useState("");
+  const [loveWordCounter, setLoveWordCounter] = useState([0, 0, 0, 0, 0]);
   const [phase, setPhase] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -24,14 +26,24 @@ export default function Home() {
 
   const questionList = questionData.questionList;
 
-  function handleClick() {
-    // cause we got 16 questions
-    if (phase !== 16) {
-      // 第三題
+  function handleClick(res: any) {
+    if (phase === 2) {
+      setLoveType(res);
+    }
+    if (phase > 5 && phase < 16) {
+      const newCounter = loveWordCounter.map((c, index) =>
+        index == res ? c + 1 : c
+      );
+      setLoveWordCounter(newCounter);
+    }
+    if (phase < 16) {
+      // cause we got 16 questions
       setPhase(phase + 1);
       setIsLoading(true);
     } else {
-      router.push("/results/0-0-2");
+      console.log(loveType, loveWordCounter);
+      let mostCount = loveWordCounter.indexOf(Math.max(...loveWordCounter));
+      router.push("/results/" + loveType + "-0-" + mostCount);
     }
   }
 

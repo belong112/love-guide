@@ -13,7 +13,6 @@ export function getAllResultIds() {
       }
     }
   }
-  console.log(allPath);
 
   return allPath.map((type) => {
     return {

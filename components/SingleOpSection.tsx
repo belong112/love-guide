@@ -8,6 +8,7 @@ import { nanoid } from "nanoid";
 interface SingelOpSectionProps {
   question: string[];
   options: string[];
+  results: string[];
   clickNextPhase: any;
   selectNumbers: number;
   md: number;
@@ -17,6 +18,7 @@ interface SingelOpSectionProps {
 export default function SingelOpSection(props: SingelOpSectionProps) {
   const traits = props.options;
   const [options, setOptions] = useState(allNewOptions());
+  const [result, setResult] = useState("");
   const questionSection = props.question.join("\n");
 
   const optionBtns = options.map((op) => (
@@ -46,6 +48,7 @@ export default function SingelOpSection(props: SingelOpSectionProps) {
       choosed: index == cid ? true : false,
     }));
     setOptions(ops);
+    setResult(props.results[cid]);
   }
 
   return (
@@ -64,7 +67,10 @@ export default function SingelOpSection(props: SingelOpSectionProps) {
         </Grid>
         <Grid item md={12} py={3} justifyContent="center" display="flex">
           {options.filter((x) => x.choosed).length == props.selectNumbers && (
-            <div className={styles.doneBtn} onClick={props.clickNextPhase}>
+            <div
+              className={styles.doneBtn}
+              onClick={() => props.clickNextPhase(result)}
+            >
               下一步
             </div>
           )}
