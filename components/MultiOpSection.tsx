@@ -9,6 +9,7 @@ import { nanoid } from "nanoid";
 interface MultiOpSectionProps {
   question: string[];
   options: string[];
+  theme: string[];
   clickNextPhase: any;
   selectNumbers: number;
   md: number;
@@ -28,6 +29,7 @@ export default function MultiOpSection(props: MultiOpSectionProps) {
         text={op.text}
         isHeld={op.priority !== -1}
         clickOption={() => clickOption(op.id)}
+        theme={props.theme}
       />
     </Grid>
   ));
@@ -36,6 +38,7 @@ export default function MultiOpSection(props: MultiOpSectionProps) {
     <Grid key={nanoid()} item md={4} sm={4} xs={4}>
       <ChoicesBox
         key={item.id}
+        theme={props.theme}
         text={item.choiceId !== -1 ? traits[item.choiceId] : ""}
         defaultText={item.defaultText}
         isFilled={item.choiceId !== -1}

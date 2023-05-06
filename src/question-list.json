@@ -53,10 +53,8 @@
         "無話不談",
         "互說情話",
         "讚美彼此",
-        "浪漫驚喜",
-        "甜蜜牽手"
+        "浪漫驚喜"
       ],
-
       "selectNumbers": 3,
       "md": 4,
       "sm": 4,
@@ -134,7 +132,7 @@
     {
       "qid": 6,
       "questionType": "TrueAndFalse",
-      "question": [""],
+      "question": ["選出較能反映你真實想法的句子。"],
       "options": ["我喜歡收到寫滿讚美與肯定的小紙條", "我喜歡被擁抱的感覺"],
       "results": ["0", "4"],
       "selectNumbers": 1,
@@ -145,7 +143,7 @@
     {
       "qid": 7,
       "questionType": "TrueAndFalse",
-      "question": [""],
+      "question": ["選出較能反映你真實想法的句子。"],
       "options": [
         "我喜歡和對方獨處，就算各做各的事也沒關係",
         "每當有人給我實際的幫助，我就會覺得他是愛我的"
@@ -159,7 +157,7 @@
     {
       "qid": 8,
       "questionType": "TrueAndFalse",
-      "question": [""],
+      "question": ["選出較能反映你真實想法的句子。"],
       "options": ["我喜歡收到禮物", "我喜歡到對方家裡玩"],
       "results": ["2", "1"],
       "selectNumbers": 1,
@@ -170,7 +168,7 @@
     {
       "qid": 9,
       "questionType": "TrueAndFalse",
-      "question": [""],
+      "question": ["選出較能反映你真實想法的句子。"],
       "options": [
         "當我遇到挫折時，有人能夠給予我實質的幫助，會讓我感到被喜歡",
         "當我遇到挫折時，對方若能給予我擁抱，會讓我感覺到被喜歡"
@@ -184,7 +182,7 @@
     {
       "qid": 10,
       "questionType": "TrueAndFalse",
-      "question": [""],
+      "question": ["選出較能反映你真實想法的句子。"],
       "options": [
         "當對方攬著我的肩膀，我就會有被喜歡的感覺",
         "當對方送我禮物，我就會有被喜歡的感覺"
@@ -198,7 +196,7 @@
     {
       "qid": 11,
       "questionType": "TrueAndFalse",
-      "question": [""],
+      "question": ["選出較能反映你真實想法的句子。"],
       "options": ["我喜歡和對方到處走走", "我喜歡和對方擊掌或手牽手"],
       "results": ["1", "4"],
       "selectNumbers": 1,
@@ -209,7 +207,7 @@
     {
       "qid": 12,
       "questionType": "TrueAndFalse",
-      "question": [""],
+      "question": ["選出較能反映你真實想法的句子。"],
       "options": [
         "收到禮物會讓我覺得很開心",
         "當對方給予我肯定或讚美時會讓我有被喜歡的感覺"
@@ -223,7 +221,7 @@
     {
       "qid": 13,
       "questionType": "TrueAndFalse",
-      "question": [""],
+      "question": ["選出較能反映你真實想法的句子。"],
       "options": [
         "當別人為我努力做一件事，我會覺得他很喜歡我",
         "我喜歡聽到別人說我很好看，很迷人"
@@ -237,7 +235,7 @@
     {
       "qid": 14,
       "questionType": "TrueAndFalse",
-      "question": [""],
+      "question": ["選出較能反映你真實想法的句子。"],
       "options": ["我喜歡和對方一起玩耍", "我喜歡收到對方送給我的禮物"],
       "results": ["1", "2"],
       "selectNumbers": 1,
@@ -248,7 +246,7 @@
     {
       "qid": 15,
       "questionType": "TrueAndFalse",
-      "question": [""],
+      "question": ["選出較能反映你真實想法的句子。"],
       "options": [
         "我喜歡聽到別人肯定我的話",
         "如果有人幫我的忙，我會覺得他是喜歡我的"

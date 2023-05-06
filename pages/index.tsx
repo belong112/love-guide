@@ -20,9 +20,9 @@ export default function Home() {
   }, 500);
 
   const themeColor = [
-    [" #a4c0cf", "#f5e4d5", "#fea865"],
-    ["#f0f0f0", "#a4c0cf", "#546073"],
-  ]; // bgcolor, option color, selected color
+    [" #a4c0cf", "#fea865", "#f5e4d5", "#000"],
+    ["#f0f0f0", "#546073", "#a4c0cf", "#fff"],
+  ]; // bgcolor, option color, selected color, text color
 
   const questionList = questionData.questionList;
 
@@ -41,7 +41,6 @@ export default function Home() {
       setPhase(phase + 1);
       setIsLoading(true);
     } else {
-      console.log(loveType, loveWordCounter);
       let mostCount = loveWordCounter.indexOf(Math.max(...loveWordCounter));
       router.push("/results/" + loveType + "-0-" + mostCount);
     }
@@ -68,11 +67,13 @@ export default function Home() {
             {questionList[phase].questionType === "MultiOp" ? (
               <MultiOpSection
                 clickNextPhase={handleClick}
+                theme={themeColor[phase % 2]}
                 {...questionList[phase]}
               />
             ) : (
               <SingleOpSection
                 clickNextPhase={handleClick}
+                theme={themeColor[phase % 2]}
                 {...questionList[phase]}
               />
             )}

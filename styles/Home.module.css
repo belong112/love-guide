@@ -36,6 +36,11 @@
   text-align: center;
   line-height: 2rem;
   white-space: pre-line;
+  min-height: 100px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .optionBtnFace {
@@ -44,10 +49,13 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  height: 80%;
 }
 
 .optionBtnText {
   font-size: 1rem;
+  align-items: center;
+  display: flex;
 }
 
 .doneBtn {

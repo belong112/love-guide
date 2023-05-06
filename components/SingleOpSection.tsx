@@ -9,6 +9,7 @@ interface SingelOpSectionProps {
   question: string[];
   options: string[];
   results: string[];
+  theme: string[];
   clickNextPhase: any;
   selectNumbers: number;
   md: number;
@@ -25,6 +26,7 @@ export default function SingelOpSection(props: SingelOpSectionProps) {
     <Grid key={nanoid()} item md={props.md} sm={props.sm} xs={props.xs}>
       <OptionBtn
         key={op.id}
+        theme={props.theme}
         text={op.text}
         isHeld={op.choosed}
         clickOption={() => clickOption(op.id)}
@@ -59,9 +61,9 @@ export default function SingelOpSection(props: SingelOpSectionProps) {
             {questionSection}
           </Grid>
           <Grid item md={12} my={1}>
-            <Divider />
+            {questionSection && <Divider />}
           </Grid>
-          <Grid container spacing={2} my={1}>
+          <Grid container spacing={3} my={1}>
             {optionBtns}
           </Grid>
         </Grid>

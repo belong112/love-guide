@@ -55,7 +55,7 @@ export default function Result({ resultData }: any) {
             </Grid>
             <Grid item md={12} my={2} className={styles.resultCard}>
               <Typography variant="h2">{resultData.MBTIType1}</Typography>
-              <Typography variant="h2">{resultData.MBTIType2}</Typography>
+              <Typography variant="h3">{resultData.MBTIType2}</Typography>
             </Grid>
             <Grid item md={12} my={2}>
               <Typography>{resultData.MBTITypeDesc}</Typography>
