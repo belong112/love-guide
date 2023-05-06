@@ -20,7 +20,7 @@ export default function ChooseBox(props: ChooseBoxProps) {
     justifyContent: "center",
     cursor: "pointer",
     fontSize: "1rem",
-    color: props.isFilled ? props.theme[3] : props.theme[2],
+    color: props.isFilled ? props.theme[3] : "#000",
   }));
 
   return (
