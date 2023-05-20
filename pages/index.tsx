@@ -17,13 +17,12 @@ export default function Home() {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 500);
+  }, 800);
 
   const themeColor = [
     [" #a4c0cf", "#fea865", "#f5e4d5", "#000"],
     ["#f0f0f0", "#546073", "#a4c0cf", "#fff"],
   ]; // bgcolor, option color, selected color, text color
-
   const questionList = questionData.questionList;
 
   function handleClick(res: any) {
@@ -42,7 +41,14 @@ export default function Home() {
       setIsLoading(true);
     } else {
       let mostCount = loveWordCounter.indexOf(Math.max(...loveWordCounter));
-      router.push("/results/" + loveType + "-0-" + mostCount);
+      router.push(
+        "/results/" +
+          loveType +
+          "-" +
+          Math.floor(Math.random() * 16) +
+          "-" +
+          mostCount
+      );
     }
   }
 
