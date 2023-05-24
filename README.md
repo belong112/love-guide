@@ -1,8 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 情感性平教育心理測驗小教具
 
-## Getting Started
+## 專案簡述
 
-First, run the development server:
+此網頁是為 Teach for Taiwan 創業組-議題遊戲王團隊所設計的心理測驗。
+
+在教育現場，每學期總是會有很多不同種類的宣導，像是反霸凌，藥物濫用，餐前五分鐘，性平，交通安全...但通常這些宣導都是看看影片，喊喊口號，說教意味很濃厚。宣導內容也沒有貼近學生的生活。因此這些宣導學生能吸收多少進去，我們打上一個問號。
+
+因為看見了這個問題，我們團隊想要將這些議題宣導遊戲化。如此一來既能夠跳脫原本的宣導方式，讓學生耳目一新，遊戲的內容也更能貼近學生的生活。
+
+這次我們從談戀愛出發去談論「性平」，使用心理測驗的方式，透過帶入感的問題設計，與有質感的網頁互動（非 google 問卷），引起學生的興趣，也可以讓學生真的認識到怎麼好好談戀愛，怎麼好好分手，這些都是性平教育的一環。
+
+---
+
+## 啟動方式
+
+進入到專案資料夾後先啟動 sever :
 
 ```bash
 npm run dev
@@ -12,27 +24,10 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+接著使用瀏覽器開啟 [http://localhost:3000](http://localhost:3000) 就會看到頁面了
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 來去試玩
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+點擊[這裡](love-guide-50201sdhh-belong112.vercel.app)可以進入到我在 vevcel 上面部署好的網站
